@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
         // Hide the loader once the page is fully loaded
         setTimeout(() => {
             loader.style.display = 'none';
-        }, 2000); // 2 seconds to load
+        }, 1000); // 1 second to load
     }
 });
 
@@ -26,6 +26,6 @@ if (termsLink) {
         setTimeout(() => {
             window.open(termsLink.href, '_blank'); // Open the link in a new tab
             loader.style.display = 'none'; // Hide the loader after opening
-        }, 2000); // 2 seconds to load
+        }, 1000); // 1 second to load
     });
 }
