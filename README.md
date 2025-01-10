@@ -32,6 +32,6 @@ Check out the live site here: [Shoeroom by Asap Footwears](https://www.shoeroomb
 
 ## Credits
 
-- **Developer**: [frankieakam]
+- **Developer**: [Franklyn Akam](https://www.x.com/frankie_akam)
 - **Special Thanks**: To Asap Footwears who bring style and comfort to life.
 
