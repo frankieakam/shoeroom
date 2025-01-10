@@ -26,6 +26,6 @@ if (termsLink) {
         setTimeout(() => {
             window.open(termsLink.href, '_blank'); // Open the link in a new tab
             loader.style.display = 'none'; // Hide the loader after opening
-        }, 5000); // 5 seconds to load
+        }, 3000); // 3 seconds to load
     });
 }
