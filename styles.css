@@ -1281,20 +1281,20 @@ footer a:hover {
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 500px;
+    gap: 300px;
 }
 
 /* small smartphones */
 @media (max-width: 600px) {
     .footer-links {
-        gap: 50px;
+        gap: 30px;
     }
 }
 
 /* medium-sized smartphones */
 @media (max-width: 800px) {
     .footer-links {
-        gap: 50px;
+        gap: 30px;
     }
 }
 
