@@ -26,7 +26,7 @@ and loading animations for improved user experience.
 - **JavaScript** - for interactivity and dynamic functionality.
 - **Google Fonts** - (Raleway) for typography.
 
-## Live Demo
+## Live Website
 
 Check out the live site here: [Shoeroom by Asap Footwears](https://www.shoeroom.netlify.app)
 
