@@ -28,7 +28,7 @@ and loading animations for improved user experience.
 
 ## Live Website
 
-Check out the live site here: [Shoeroom by Asap Footwears](https://www.shoeroombyasap.netlify.app)
+Check out the live site here: [Shoeroom by Asap Footwears](https://shoeroombyasap.netlify.app)
 
 ## Credits
 
