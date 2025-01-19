@@ -312,10 +312,10 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('background-image/gift-box-with-man-shoes-camera-mustache.jpg');
+    /* background: url('background-image/gift-box-with-man-shoes-camera-mustache.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     color: #fff;
     height: 50vh;
     display: flex;
@@ -328,30 +328,30 @@ nav ul li a:hover {
 /* small smartphones */
 @media (max-width: 600px) {
     .hero {
-        background: #ddd;
+        /* background: #ddd; */
         height: 25vh;
-        padding: 17px; 
+        padding: 30px; 
     }
 }
 
 /* medium-sized smartphones */
 @media (max-width: 800px) {
     .hero {
-        background: #ddd;
+        /* background: #ddd; */
         height: 25vh;
-        padding: 17px;
+        padding: 30px;
     }
 }
 
 .hero h2 {
     font-size: 40px;
-    margin: 40px 16px;
+    margin: 20px 16px;
 }
 
 /* small smartphones */
 @media (max-width: 600px) {
     .hero h2 {
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 8px;
     }
 }
@@ -359,13 +359,34 @@ nav ul li a:hover {
 /* medium-sized smartphones */
 @media (max-width: 800px) {
     .hero h2 {
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 8px;
     }
 }
 
+.hero p {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+/* small smartphones */
+@media (max-width: 600px) {
+    .hero p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}
+
+/* medium-sized smartphones */
+@media (max-width: 800px) {
+    .hero p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}
+
 .hero .explore-shoes {
-    background: #ff9900;
+    background: #333;
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
@@ -376,6 +397,7 @@ nav ul li a:hover {
 /* small smartphones */
 @media (max-width: 600px) {
     .hero .explore-shoes{
+        background: #ff9900;
         padding: 6px 12px;
         font-size: 9px;
     }
@@ -384,6 +406,7 @@ nav ul li a:hover {
 /* medium-sized smartphones */
 @media (max-width: 800px) {
     .hero .explore-shoes{
+        background: #ff9900;
         padding: 6px 12px;
         font-size: 9px;
     }
@@ -400,7 +423,7 @@ nav ul li a:hover {
 /* small smartphones */
 @media (max-width: 600px) {
     .hero .explore-shoes:hover {
-        color: #333;
+        color: #fff;
         text-decoration-line: underline;
         text-decoration-style: double;
     }
@@ -409,7 +432,7 @@ nav ul li a:hover {
 /* medium-sized smartphones */
 @media (max-width: 800px) {
     .hero .explore-shoes:hover {
-        color: #333;
+        color: #fff;
         text-decoration-line: underline;
         text-decoration-style: double;
     }

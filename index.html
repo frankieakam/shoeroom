@@ -81,59 +81,99 @@
         <h2>Custom Craft, Made as Ordered</h2>
         <div class="orders-slider">
             <div class="order">
-                <video width="50%" height="200px" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.13.43_1ce8f5e0.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.18.32_2fc0fbb4.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.18.34_2892719d.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.18.37_30b315d3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.18.39_46675454.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.18.41_ec4ca205.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 14.18.42_f97d406e.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
             <div class="order">
-                <video width="640" height="360" controls>
+                <video class="video" width="640" height="360" controls muted>
                     <source src="videos/WhatsApp Video 2025-01-07 at 17.59.20_e2fbe9ad.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+
+                <audio class="audio" loop>
+                    <source src="audios/Shallipoppi _asap.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
 
         </div>
@@ -350,6 +390,41 @@
         </div>
     </footer>
 
+
+    <!-- Internal JS functionality -->
+    <script>
+        // Get all video and audio elements
+        const videos = document.querySelectorAll('.video');
+        const audios = document.querySelectorAll('.audio');
+    
+        // Loop through all video elements
+        videos.forEach((video, index) => {
+            const audio = audios[index]; // Match the corresponding audio element
+    
+            if (audio) {
+                // Ensure the video starts muted
+                video.muted = true;
+    
+                // Play the corresponding audio when the video starts
+                video.addEventListener('play', () => {
+                    audio.play();
+                });
+    
+                // Pause the audio when the video is paused
+                video.addEventListener('pause', () => {
+                    audio.pause();
+                });
+    
+                // Sync the audio position with the video
+                video.addEventListener('timeupdate', () => {
+                    if (!audio.paused) {
+                        audio.currentTime = video.currentTime;
+                    }
+                });
+            }
+        });
+    </script>
+    
 
     <!-- External JS functionalities -->
     <script src="asap-loader.js"></script>
