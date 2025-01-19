@@ -7,7 +7,7 @@ counters.forEach(counter => {
     const updateCount = () => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-        const increment = Math.max(target / 100, 1); // increment is at least 1
+        const increment = Math.max(target / 50, 1); // increment is at least 1
 
         if (count < target) {
             counter.innerText = Math.ceil(count + increment);
