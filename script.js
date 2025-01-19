@@ -1,6 +1,7 @@
 // JavaScript for Shoeroom by Asap
 
 // Counter Functionality
+// Counter Functionality
 const counters = document.querySelectorAll('.stat h3');
 
 counters.forEach(counter => {
@@ -13,7 +14,7 @@ counters.forEach(counter => {
             counter.innerText = Math.ceil(count + increment);
             setTimeout(updateCount, 20); // for smoother animation
         } else {
-            counter.innerText = target;
+            counter.innerText = target + '+'; // Add "+" after the target value
         }
     };
 
