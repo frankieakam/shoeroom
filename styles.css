@@ -1339,7 +1339,7 @@ footer a:hover {
 .loading-screen img {
     width: 100px;
     height: auto;
-    animation: move-left-right 2s infinite;
+    animation: move-left-right 2s;
 }
 
 /* small smartphones - 600px */
